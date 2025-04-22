@@ -1,0 +1,23 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin Master.master.cs" Inherits="Ecomm19032025.AdminManage.Admin_Master" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="MainCnt" runat="server">
+            </asp:ContentPlaceHolder>
+            <asp:ContentPlaceHolder ID="FooterCnt" runat="server">
+            </asp:ContentPlaceHolder>
+     ]      <asp:ContentPlaceHolder ID="UnderFooterCnt" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

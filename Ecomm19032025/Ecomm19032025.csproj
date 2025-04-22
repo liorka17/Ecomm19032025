@@ -67,13 +67,71 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AdminManage\blank.html" />
+    <Content Include="AdminManage\buttons.html" />
+    <Content Include="AdminManage\css\font-awesome\font-awesome.min.css" />
+    <Content Include="AdminManage\css\ltr\bootstrap.min.css" />
+    <Content Include="AdminManage\css\ltr\sb-admin-2.css" />
+    <Content Include="AdminManage\css\plugins\dataTables.bootstrap.css" />
+    <Content Include="AdminManage\css\plugins\metisMenu\metisMenu.css" />
+    <Content Include="AdminManage\css\plugins\metisMenu\metisMenu.min.css" />
+    <Content Include="AdminManage\css\plugins\morris.css" />
+    <Content Include="AdminManage\css\plugins\social-buttons.css" />
+    <Content Include="AdminManage\css\plugins\timeline.css" />
+    <Content Include="AdminManage\css\rtl\bootstrap.min.css" />
+    <Content Include="AdminManage\css\rtl\bootstrap.rtl.css" />
+    <Content Include="AdminManage\css\rtl\sb-admin-2.css" />
     <Content Include="AdminManage\Default.aspx" />
+    <Content Include="AdminManage\extras\image-samples\buttons.png" />
+    <Content Include="AdminManage\extras\image-samples\tables.png" />
+    <Content Include="AdminManage\extras\image-samples\typography.png" />
+    <Content Include="AdminManage\flot.html" />
+    <Content Include="AdminManage\fonts\fontawesome-webfont-v=4.2.0.svg" />
+    <Content Include="AdminManage\fonts\fontawesome-webfont.svg" />
+    <Content Include="AdminManage\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="AdminManage\forms.html" />
+    <Content Include="AdminManage\grid.html" />
+    <Content Include="AdminManage\images\bootstrap\datatables\sort_asc.png" />
+    <Content Include="AdminManage\images\bootstrap\datatables\sort_asc_disabled.png" />
+    <Content Include="AdminManage\images\bootstrap\datatables\sort_both.png" />
+    <Content Include="AdminManage\images\bootstrap\datatables\sort_desc.png" />
+    <Content Include="AdminManage\images\bootstrap\datatables\sort_desc_disabled.png" />
+    <Content Include="AdminManage\index.html" />
+    <Content Include="AdminManage\js\bootstrap.min.js" />
+    <Content Include="AdminManage\js\bootstrap\bootstrap.min.js" />
+    <Content Include="AdminManage\js\bootstrap\dataTables.bootstrap.min.js" />
+    <Content Include="AdminManage\js\flot\excanvas.min.js" />
+    <Content Include="AdminManage\js\flot\jquery.flot.js" />
+    <Content Include="AdminManage\js\flot\jquery.flot.pie.js" />
+    <Content Include="AdminManage\js\flot\jquery.flot.resize.js" />
+    <Content Include="AdminManage\js\flot\jquery.flot.time.js" />
+    <Content Include="AdminManage\js\flot\jquery.flot.tooltip.min.js" />
+    <Content Include="AdminManage\js\jquery-1.11.0.js" />
+    <Content Include="AdminManage\js\jquery\jquery.dataTables.min.js" />
+    <Content Include="AdminManage\js\jquery\jquery.min.js" />
+    <Content Include="AdminManage\js\metisMenu\metisMenu.min.js" />
+    <Content Include="AdminManage\js\morris\morris.min.js" />
+    <Content Include="AdminManage\js\raphael\raphael.min.js" />
+    <Content Include="AdminManage\js\sb-admin-2.js" />
+    <Content Include="AdminManage\login.html" />
+    <Content Include="AdminManage\morris.html" />
+    <Content Include="AdminManage\notifications.html" />
+    <Content Include="AdminManage\panels-wells.html" />
+    <Content Include="AdminManage\tables.html" />
+    <Content Include="AdminManage\typography.html" />
     <Content Include="Default.aspx" />
     <Content Include="Error.aspx" />
     <Content Include="login.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminManage\Admin Master.Master.cs">
+      <DependentUpon>Admin Master.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminManage\Admin Master.Master.designer.cs">
+      <DependentUpon>Admin Master.Master</DependentUpon>
+    </Compile>
     <Compile Include="AdminManage\Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -114,6 +172,21 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AdminManage\fonts\fontawesome-webfont-.eot" />
+    <Content Include="AdminManage\fonts\fontawesome-webfont-v=4.2.0.eot" />
+    <Content Include="AdminManage\fonts\fontawesome-webfont-v=4.2.0.ttf" />
+    <Content Include="AdminManage\fonts\fontawesome-webfont-v=4.2.0.woff" />
+    <Content Include="AdminManage\fonts\fontawesome-webfont.eot" />
+    <Content Include="AdminManage\fonts\fontawesome-webfont.ttf" />
+    <Content Include="AdminManage\fonts\fontawesome-webfont.woff" />
+    <Content Include="AdminManage\fonts\FontAwesome.otf" />
+    <Content Include="AdminManage\fonts\glyphicons-halflings-regular-.eot" />
+    <Content Include="AdminManage\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="AdminManage\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="AdminManage\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="AdminManage\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="AdminManage\README.md" />
+    <Content Include="AdminManage\Admin Master.Master" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
