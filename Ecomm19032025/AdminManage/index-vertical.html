@@ -394,7 +394,7 @@
                         <span class="h3">$12,600</span>
                         <span class="small text-muted">+20%</span>
                         <span class="fe fe-arrow-up text-success fe-12"></span>
-                        <p class="text-muted mt-2"> Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui </p>
+                        <p class="text-muted"> Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui </p>
                       </div>
                       <div class="col-6 col-lg-2 text-center py-4">
                         <p class="mb-1 small text-muted">Today</p>
@@ -421,7 +421,7 @@
                         <span class="fe fe-arrow-down text-danger fe-12"></span>
                       </div>
                     </div>
-                    <div class="chartbox mr-4">
+                    <div class="map-box">
                       <div id="areaChart"></div>
                     </div>
                   </div> <!-- .card-body -->
@@ -512,12 +512,12 @@
               <div class="row">
                 <!-- Recent Activity -->
                 <div class="col-md-12 col-lg-4 mb-4">
-                  <div class="card timeline shadow">
+                  <div class="card timeline">
                     <div class="card-header">
                       <strong class="card-title">Recent Activity</strong>
                       <a class="float-right small text-muted" href="#!">View all</a>
                     </div>
-                    <div class="card-body" data-simplebar style="height:355px; overflow-y: auto; overflow-x: hidden;">
+                    <div class="card-body" data-simplebar style="height:360px; overflow-y: auto; overflow-x: hidden;">
                       <h6 class="text-uppercase text-muted mb-4">Today</h6>
                       <div class="pb-3 timeline-item item-primary">
                         <div class="pl-5">
@@ -530,10 +530,10 @@
                         <div class="pl-5">
                           <div class="mb-3"><strong>@Hester Nissim</strong><span class="text-muted small mx-2">has upload new files to</span><strong>Tiny Admin</strong></div>
                           <div class="row mb-3">
-                            <div class="col"><img src="./assets/products/p1.jpg" alt="..." class="img-fluid rounded"></div>
-                            <div class="col"><img src="./assets/products/p2.jpg" alt="..." class="img-fluid rounded"></div>
-                            <div class="col"><img src="./assets/products/p3.jpg" alt="..." class="img-fluid rounded"></div>
-                            <div class="col"><img src="./assets/products/p4.jpg" alt="..." class="img-fluid rounded"></div>
+                            <div class="col-1"><img src="./assets/products/p1.jpg" alt="..." class="img-fluid rounded"></div>
+                            <div class="col-1"><img src="./assets/products/p2.jpg" alt="..." class="img-fluid rounded"></div>
+                            <div class="col-1"><img src="./assets/products/p3.jpg" alt="..." class="img-fluid rounded"></div>
+                            <div class="col-1"><img src="./assets/products/p4.jpg" alt="..." class="img-fluid rounded"></div>
                           </div>
                           <p class="small text-muted">Front-End Development <span class="badge badge-light">1h ago</span>
                           </p>
@@ -543,7 +543,7 @@
                         <div class="pl-5">
                           <div class="mb-3"><strong>@Kelley Sonya</strong><span class="text-muted small mx-2">has commented on</span><strong>Advanced table</strong></div>
                           <div class="card d-inline-flex mb-2">
-                            <div class="card-body bg-light py-2 px-3 small rounded"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim nulla eu quam cursus placerat. Vivamus non odio ullamcorper, lacinia ante nec, blandit leo. </div>
+                            <div class="card-body bg-light py-2 px-3"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim nulla eu quam cursus placerat. Vivamus non odio ullamcorper, lacinia ante nec, blandit leo. </div>
                           </div>
                           <p class="small text-muted">Back-End Development <span class="badge badge-light">1h ago</span>
                           </p>
@@ -580,6 +580,7 @@
                           <div class="card d-inline-flex mb-2">
                             <div class="card-body bg-light py-2 px-3"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim nulla eu quam cursus placerat. Vivamus non odio ullamcorper, lacinia ante nec, blandit leo. </div>
                           </div>
+                          </p>
                           <p class="small text-muted">Back-End Development <span class="badge badge-light">1h ago</span>
                           </p>
                         </div>
@@ -588,9 +589,9 @@
                         <div class="pl-5">
                           <div class="mb-3"><strong>@Lillith Joseph</strong><span class="text-muted small mx-2">has upload new files to</span><strong>Tiny Admin</strong></div>
                           <div class="row mb-3">
-                            <div class="col"><img src="./assets/products/p4.jpg" alt="..." class="img-fluid rounded"></div>
-                            <div class="col"><img src="./assets/products/p1.jpg" alt="..." class="img-fluid rounded"></div>
-                            <div class="col"><img src="./assets/products/p2.jpg" alt="..." class="img-fluid rounded"></div>
+                            <div class="col-1"><img src="./assets/products/p4.jpg" alt="..." class="img-fluid rounded"></div>
+                            <div class="col-1"><img src="./assets/products/p1.jpg" alt="..." class="img-fluid rounded"></div>
+                            <div class="col-1"><img src="./assets/products/p2.jpg" alt="..." class="img-fluid rounded"></div>
                           </div>
                           <p class="small text-muted">Front-End Development <span class="badge badge-light">1h ago</span>
                           </p>
@@ -613,6 +614,7 @@
                             <th>ID</th>
                             <th>Name</th>
                             <th>Address</th>
+                            <th>Phone</th>
                             <th>Date</th>
                             <th>Action</th>
                           </tr>
@@ -622,6 +624,7 @@
                             <td>2474</td>
                             <th scope="col">Brown, Asher D.</th>
                             <td>Ap #331-7123 Lobortis Avenue</td>
+                            <td>(958) 421-0798</td>
                             <td>13/09/2020</td>
                             <td>
                               <div class="dropdown">
@@ -640,6 +643,7 @@
                             <td>2786</td>
                             <th scope="col">Leblanc, Yoshio V.</th>
                             <td>287-8300 Nisl. St.</td>
+                            <td>(899) 881-3833</td>
                             <td>04/05/2019</td>
                             <td>
                               <div class="dropdown">
@@ -658,6 +662,7 @@
                             <td>2747</td>
                             <th scope="col">Hester, Nissim L.</th>
                             <td>4577 Cras St.</td>
+                            <td>(977) 220-6518</td>
                             <td>04/06/2019</td>
                             <td>
                               <div class="dropdown">
@@ -676,6 +681,7 @@
                             <td>2639</td>
                             <th scope="col">Gardner, Leigh S.</th>
                             <td>P.O. Box 228, 7512 Lectus Ave</td>
+                            <td>(537) 315-1481</td>
                             <td>04/08/2019</td>
                             <td>
                               <div class="dropdown">
@@ -694,6 +700,7 @@
                             <td>2238</td>
                             <th scope="col">Higgins, Uriah L.</th>
                             <td>Ap #377-5357 Sed Road</td>
+                            <td>(238) 386-0247</td>
                             <td>04/01/2019</td>
                             <td>
                               <div class="dropdown">
