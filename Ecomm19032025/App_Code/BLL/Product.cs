@@ -30,7 +30,7 @@ namespace BLL//BLL - Business Logic Layer
 
         public static List<Product> GetAll()//מחזירה את כל המוצרים
         {
-            return new List<Product>();//מחזירה רשימה חדשה של מוצרים
+            return ProductDAL.GetAll();//מחזירה רשימה חדשה של מוצרים
         }
 
         public int Save( )

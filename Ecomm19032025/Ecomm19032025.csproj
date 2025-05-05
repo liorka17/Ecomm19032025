@@ -67,77 +67,169 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="AdminManage\blank.html" />
-    <Content Include="AdminManage\buttons.html" />
-    <Content Include="AdminManage\css\font-awesome\font-awesome.min.css" />
-    <Content Include="AdminManage\css\ltr\bootstrap.min.css" />
-    <Content Include="AdminManage\css\ltr\sb-admin-2.css" />
-    <Content Include="AdminManage\css\plugins\dataTables.bootstrap.css" />
-    <Content Include="AdminManage\css\plugins\metisMenu\metisMenu.css" />
-    <Content Include="AdminManage\css\plugins\metisMenu\metisMenu.min.css" />
-    <Content Include="AdminManage\css\plugins\morris.css" />
-    <Content Include="AdminManage\css\plugins\social-buttons.css" />
-    <Content Include="AdminManage\css\plugins\timeline.css" />
-    <Content Include="AdminManage\css\rtl\bootstrap.min.css" />
-    <Content Include="AdminManage\css\rtl\bootstrap.rtl.css" />
-    <Content Include="AdminManage\css\rtl\sb-admin-2.css" />
-    <Content Include="AdminManage\Default.aspx" />
-    <Content Include="AdminManage\extras\image-samples\buttons.png" />
-    <Content Include="AdminManage\extras\image-samples\tables.png" />
-    <Content Include="AdminManage\extras\image-samples\typography.png" />
-    <Content Include="AdminManage\flot.html" />
-    <Content Include="AdminManage\fonts\fontawesome-webfont-v=4.2.0.svg" />
-    <Content Include="AdminManage\fonts\fontawesome-webfont.svg" />
-    <Content Include="AdminManage\fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="AdminManage\forms.html" />
-    <Content Include="AdminManage\grid.html" />
-    <Content Include="AdminManage\images\bootstrap\datatables\sort_asc.png" />
-    <Content Include="AdminManage\images\bootstrap\datatables\sort_asc_disabled.png" />
-    <Content Include="AdminManage\images\bootstrap\datatables\sort_both.png" />
-    <Content Include="AdminManage\images\bootstrap\datatables\sort_desc.png" />
-    <Content Include="AdminManage\images\bootstrap\datatables\sort_desc_disabled.png" />
+    <Content Include="AdminManage\assets\avatars\face-1.jpg" />
+    <Content Include="AdminManage\assets\avatars\face-2.jpg" />
+    <Content Include="AdminManage\assets\avatars\face-3.jpg" />
+    <Content Include="AdminManage\assets\avatars\face-4.jpg" />
+    <Content Include="AdminManage\assets\avatars\face-5.jpg" />
+    <Content Include="AdminManage\assets\avatars\face-6.jpg" />
+    <Content Include="AdminManage\assets\avatars\face-7.jpg" />
+    <Content Include="AdminManage\assets\avatars\face-8.jpg" />
+    <Content Include="AdminManage\assets\images\logo.svg" />
+    <Content Include="AdminManage\assets\images\qrcode.svg" />
+    <Content Include="AdminManage\assets\products\p1.jpg" />
+    <Content Include="AdminManage\assets\products\p2.jpg" />
+    <Content Include="AdminManage\assets\products\p3.jpg" />
+    <Content Include="AdminManage\assets\products\p4.jpg" />
+    <Content Include="AdminManage\auth-confirm.html" />
+    <Content Include="AdminManage\auth-login-half.html" />
+    <Content Include="AdminManage\auth-login.html" />
+    <Content Include="AdminManage\auth-register.html" />
+    <Content Include="AdminManage\auth-resetpw.html" />
+    <Content Include="AdminManage\calendar.html" />
+    <Content Include="AdminManage\chart-apexcharts.html" />
+    <Content Include="AdminManage\chart-chartjs.html" />
+    <Content Include="AdminManage\chart-inline.html" />
+    <Content Include="AdminManage\contacts-grid.html" />
+    <Content Include="AdminManage\contacts-list.html" />
+    <Content Include="AdminManage\contacts-new.html" />
+    <Content Include="AdminManage\css\apexcharts.css" />
+    <Content Include="AdminManage\css\app-dark.css" />
+    <Content Include="AdminManage\css\app-light.css" />
+    <Content Include="AdminManage\css\app-rtl.css" />
+    <Content Include="AdminManage\css\bootstrap-datepicker.css" />
+    <Content Include="AdminManage\css\dataTables.bootstrap4.css" />
+    <Content Include="AdminManage\css\daterangepicker.css" />
+    <Content Include="AdminManage\css\dropzone.css" />
+    <Content Include="AdminManage\css\dropzone.min.css" />
+    <Content Include="AdminManage\css\feather.css" />
+    <Content Include="AdminManage\css\fullcalendar.css" />
+    <Content Include="AdminManage\css\jquery.steps.css" />
+    <Content Include="AdminManage\css\jquery.timepicker.css" />
+    <Content Include="AdminManage\css\perfect-scrollbar.css" />
+    <Content Include="AdminManage\css\quill.snow.css" />
+    <Content Include="AdminManage\css\select2-bootstrap4.css" />
+    <Content Include="AdminManage\css\select2.css" />
+    <Content Include="AdminManage\css\simplebar.css" />
+    <Content Include="AdminManage\css\uppy.min.css" />
+    <Content Include="AdminManage\dashboard-analytics.html" />
+    <Content Include="AdminManage\dashboard-saas.html" />
+    <Content Include="AdminManage\dashboard-sales.html" />
+    <Content Include="AdminManage\dashboard-system.html" />
+    <Content Include="AdminManage\datamaps.html" />
+    <Content Include="AdminManage\Dedault.aspx" />
+    <Content Include="AdminManage\files-grid.html" />
+    <Content Include="AdminManage\files-list.html" />
+    <Content Include="AdminManage\fonts\feather.svg" />
+    <Content Include="AdminManage\form_advanced.html" />
+    <Content Include="AdminManage\form_elements.html" />
+    <Content Include="AdminManage\form_layouts.html" />
+    <Content Include="AdminManage\form_upload.html" />
+    <Content Include="AdminManage\form_validation.html" />
+    <Content Include="AdminManage\form_wizard.html" />
+    <Content Include="AdminManage\index-boxed.html" />
+    <Content Include="AdminManage\index-horizontal.html" />
+    <Content Include="AdminManage\index-vertical.html" />
     <Content Include="AdminManage\index.html" />
+    <Content Include="AdminManage\js\apexcharts.custom.js" />
+    <Content Include="AdminManage\js\apexcharts.min.js" />
+    <Content Include="AdminManage\js\apps.js" />
+    <Content Include="AdminManage\js\bootstrap-datepicker.min.js" />
     <Content Include="AdminManage\js\bootstrap.min.js" />
-    <Content Include="AdminManage\js\bootstrap\bootstrap.min.js" />
-    <Content Include="AdminManage\js\bootstrap\dataTables.bootstrap.min.js" />
-    <Content Include="AdminManage\js\flot\excanvas.min.js" />
-    <Content Include="AdminManage\js\flot\jquery.flot.js" />
-    <Content Include="AdminManage\js\flot\jquery.flot.pie.js" />
-    <Content Include="AdminManage\js\flot\jquery.flot.resize.js" />
-    <Content Include="AdminManage\js\flot\jquery.flot.time.js" />
-    <Content Include="AdminManage\js\flot\jquery.flot.tooltip.min.js" />
-    <Content Include="AdminManage\js\jquery-1.11.0.js" />
-    <Content Include="AdminManage\js\jquery\jquery.dataTables.min.js" />
-    <Content Include="AdminManage\js\jquery\jquery.min.js" />
-    <Content Include="AdminManage\js\metisMenu\metisMenu.min.js" />
-    <Content Include="AdminManage\js\morris\morris.min.js" />
-    <Content Include="AdminManage\js\raphael\raphael.min.js" />
-    <Content Include="AdminManage\js\sb-admin-2.js" />
-    <Content Include="AdminManage\login.html" />
-    <Content Include="AdminManage\morris.html" />
-    <Content Include="AdminManage\notifications.html" />
-    <Content Include="AdminManage\panels-wells.html" />
-    <Content Include="AdminManage\tables.html" />
-    <Content Include="AdminManage\typography.html" />
+    <Content Include="AdminManage\js\Chart.min.js" />
+    <Content Include="AdminManage\js\config.js" />
+    <Content Include="AdminManage\js\d3.min.js" />
+    <Content Include="AdminManage\js\datamaps-zoomto.js" />
+    <Content Include="AdminManage\js\datamaps.all.min.js" />
+    <Content Include="AdminManage\js\datamaps.custom.js" />
+    <Content Include="AdminManage\js\dataTables.bootstrap4.min.js" />
+    <Content Include="AdminManage\js\daterangepicker.js" />
+    <Content Include="AdminManage\js\dropzone.min.js" />
+    <Content Include="AdminManage\js\fullcalendar.custom.js" />
+    <Content Include="AdminManage\js\fullcalendar.js" />
+    <Content Include="AdminManage\js\gauge.min.js" />
+    <Content Include="AdminManage\js\jquery.dataTables.min.js" />
+    <Content Include="AdminManage\js\jquery.mask.min.js" />
+    <Content Include="AdminManage\js\jquery.min.js" />
+    <Content Include="AdminManage\js\jquery.sparkline.min.js" />
+    <Content Include="AdminManage\js\jquery.steps.min.js" />
+    <Content Include="AdminManage\js\jquery.stickOnScroll.js" />
+    <Content Include="AdminManage\js\jquery.timepicker.js" />
+    <Content Include="AdminManage\js\jquery.validate.min.js" />
+    <Content Include="AdminManage\js\moment.min.js" />
+    <Content Include="AdminManage\js\perfect-scrollbar.min.js" />
+    <Content Include="AdminManage\js\popper.min.js" />
+    <Content Include="AdminManage\js\quill.min.js" />
+    <Content Include="AdminManage\js\select2.min.js" />
+    <Content Include="AdminManage\js\simplebar.min.js" />
+    <Content Include="AdminManage\js\tinycolor-min.js" />
+    <Content Include="AdminManage\js\topojson.min.js" />
+    <Content Include="AdminManage\js\uppy.min.js" />
+    <Content Include="AdminManage\page-404.html" />
+    <Content Include="AdminManage\page-500.html" />
+    <Content Include="AdminManage\page-blank.html" />
+    <Content Include="AdminManage\page-invoice.html" />
+    <Content Include="AdminManage\page-orders.html" />
+    <Content Include="AdminManage\page-timeline.html" />
+    <Content Include="AdminManage\ProductAddEdit.aspx" />
+    <Content Include="AdminManage\ProductList.aspx" />
+    <Content Include="AdminManage\profile-notification.html" />
+    <Content Include="AdminManage\profile-security.html" />
+    <Content Include="AdminManage\profile-settings.html" />
+    <Content Include="AdminManage\profile.html" />
+    <Content Include="AdminManage\support-center.html" />
+    <Content Include="AdminManage\support-faqs.html" />
+    <Content Include="AdminManage\support-ticket-detail.html" />
+    <Content Include="AdminManage\support-tickets.html" />
+    <Content Include="AdminManage\table_advanced.html" />
+    <Content Include="AdminManage\table_basic.html" />
+    <Content Include="AdminManage\table_datatables.html" />
+    <Content Include="AdminManage\ui-buttons.html" />
+    <Content Include="AdminManage\ui-color.html" />
+    <Content Include="AdminManage\ui-icons.html" />
+    <Content Include="AdminManage\ui-modals.html" />
+    <Content Include="AdminManage\ui-notification.html" />
+    <Content Include="AdminManage\ui-progress.html" />
+    <Content Include="AdminManage\ui-tabs-accordion.html" />
+    <Content Include="AdminManage\ui-typograpy.html" />
+    <Content Include="AdminManage\widgets.html" />
     <Content Include="Default.aspx" />
     <Content Include="Error.aspx" />
     <Content Include="login.aspx" />
+    <Content Include="uploads\prods\img\bread.jpg" />
+    <Content Include="uploads\prods\img\cheese.jpg" />
+    <Content Include="uploads\prods\img\eggs.jpg" />
+    <Content Include="uploads\prods\img\milk.jpg" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AdminManage\Admin Master.Master.cs">
-      <DependentUpon>Admin Master.Master</DependentUpon>
+    <Compile Include="AdminManage\AdminMaster.Master.cs">
+      <DependentUpon>AdminMaster.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="AdminManage\Admin Master.Master.designer.cs">
-      <DependentUpon>Admin Master.Master</DependentUpon>
+    <Compile Include="AdminManage\AdminMaster.Master.designer.cs">
+      <DependentUpon>AdminMaster.Master</DependentUpon>
     </Compile>
-    <Compile Include="AdminManage\Default.aspx.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
+    <Compile Include="AdminManage\Dedault.aspx.cs">
+      <DependentUpon>Dedault.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="AdminManage\Default.aspx.designer.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
+    <Compile Include="AdminManage\Dedault.aspx.designer.cs">
+      <DependentUpon>Dedault.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminManage\ProductAddEdit.aspx.cs">
+      <DependentUpon>ProductAddEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminManage\ProductAddEdit.aspx.designer.cs">
+      <DependentUpon>ProductAddEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminManage\ProductList.aspx.cs">
+      <DependentUpon>ProductList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminManage\ProductList.aspx.designer.cs">
+      <DependentUpon>ProductList.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Code\BLL\Orders.cs" />
     <Compile Include="App_Code\BLL\Category.cs" />
@@ -172,21 +264,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="AdminManage\fonts\fontawesome-webfont-.eot" />
-    <Content Include="AdminManage\fonts\fontawesome-webfont-v=4.2.0.eot" />
-    <Content Include="AdminManage\fonts\fontawesome-webfont-v=4.2.0.ttf" />
-    <Content Include="AdminManage\fonts\fontawesome-webfont-v=4.2.0.woff" />
-    <Content Include="AdminManage\fonts\fontawesome-webfont.eot" />
-    <Content Include="AdminManage\fonts\fontawesome-webfont.ttf" />
-    <Content Include="AdminManage\fonts\fontawesome-webfont.woff" />
-    <Content Include="AdminManage\fonts\FontAwesome.otf" />
-    <Content Include="AdminManage\fonts\glyphicons-halflings-regular-.eot" />
-    <Content Include="AdminManage\fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="AdminManage\fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="AdminManage\fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="AdminManage\fonts\glyphicons-halflings-regular.woff2" />
-    <Content Include="AdminManage\README.md" />
-    <Content Include="AdminManage\Admin Master.Master" />
+    <Content Include="AdminManage\.DS_Store" />
+    <Content Include="AdminManage\AdminMaster.Master" />
+    <Content Include="AdminManage\data\contacts.json" />
+    <Content Include="AdminManage\data\eu.topo.json" />
+    <Content Include="AdminManage\fonts\feather.eot" />
+    <Content Include="AdminManage\fonts\feather.ttf" />
+    <Content Include="AdminManage\fonts\feather.woff" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -197,6 +281,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="uploads\prods\file\" />
+    <Folder Include="uploads\prods\vod\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

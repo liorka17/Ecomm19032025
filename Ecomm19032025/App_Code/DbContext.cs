@@ -17,7 +17,7 @@ namespace DATA
         public DbContext()
         {
             string ConnStr = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\EcommDB.mdf;Integrated Security=True;Connect Timeout=30";//מחרוזת התחברות
-            SqlConnection Conn = new SqlConnection(ConnStr);//אובייקט קונקשן שמקבל את מחרוזת ההתחברות לבסיס הנתונים
+            Conn = new SqlConnection(ConnStr);//אובייקט קונקשן שמקבל את מחרוזת ההתחברות לבסיס הנתונים
             Conn.Open();//פתיחת הקונקשן לבסיס הנתונים
 
         }

@@ -11,58 +11,60 @@ namespace DAL
 {
     public class ProductDAL
     {
-        public static Product GetById(int Pid)
-        {
-            DbContext Db = new DbContext();//יצירת אובייקט מסוג דאטה בייס
-            string sql = $"SELECT * FROM T_Product Where Pid={Pid}";//משפט השאילתא
-            DataTable Dt = Db.Execute(sql);//מחזירה את המוצר לפי קוד המוצר
-            Product Tmp = null;//יצירת מסתנה ייחוס מסוג מוצר מאותחל בנאל
-            if (Dt.Rows.Count > 0)
-            {
 
-                Tmp = new Product()//יצירת אובייקט מסוג מוצר ומילוי השדות שלו עם הערכים שנשלפו ממסד הנתונים
+        public static List<Product> GetAll()
+        {
+            DbContext Db = new DbContext(); // חיבור למסד הנתונים
+            string query = "SELECT * FROM T_Product"; // שאילתה לשליפת כל המוצרים
+            DataTable dt = Db.Execute(query); // קבלת תוצאות כטבלה
+            List<Product> lst = new List<Product>(); // יצירת רשימה ריקה של מוצרים
+
+            for (int i = 0; i < dt.Rows.Count; i++) // מעבר על כל שורה בטבלה
+            {
+                Product tmp = new Product() // יצירת אובייקט מוצר מהשורה
                 {
-                    Pid = (int)Dt.Rows[0]["Pid"],//השמת ערך בשדה
-                    Pname = (string)Dt.Rows[0]["Pname"],//השמת ערך בשדה
-                    Pdesc = (string)Dt.Rows[0]["Pdesc"],//השמת ערך בשדה
-                    Price = (float)Dt.Rows[0]["Price"],//השמת ערך בשדה
-                    Cid = (int)Dt.Rows[0]["Cid"]//השמת ערך בשדה
+                    Pid = (int)(dt.Rows[i]["Pid"]),
+                    Pname = dt.Rows[i]["Pname"].ToString(),
+                    Pdesc = dt.Rows[i]["Pdesc"].ToString(),
+                    Price = (float)(dt.Rows[i]["Price"]), // במקום ToSingle
+                    Picname = dt.Rows[i]["Picname"].ToString(),
+                    Cid = Convert.ToInt32(dt.Rows[i]["Cid"]),
                 };
-                Db.Close();//סגירת החיבור לבסיס הנתונים
-                return Tmp;//מחזירה את המוצר
+                lst.Add(tmp); // הוספה לרשימה
             }
-            return new Product();//מחזירה מוצר חדש
+
+            Db.Close(); // סגירת החיבור
+            return lst; // החזרת הרשימה
         }
 
 
-        public static List <Product> GetAll()
+
+        public static Product GetById(int Pid) // פונקציה סטטית שמחזירה מוצר לפי מזהה
         {
-            DbContext Db = new DbContext();//יצירת אובייקט מסוג דאטה בייס
-            string sql = $"SELECET * FROM T_Product";//משפט השאילתא
-            DataTable Dt = Db.Execute(sql);//מחזירה את כל המוצרים
-            
+            DbContext Db = new DbContext(); // יצירת אובייקט של מחלקת DbContext כדי לעבוד מול בסיס הנתונים
 
-            List<Product> lst = new List<Product>();//יצירת מסתנה ייחוס מסוג מוצר מאותחל בנאל
+            string query = $"SELECT * FROM T_Product WHERE Pid = {Pid}"; // שאילתת SQL שמביאה מוצר לפי מזהה
+            DataTable dt = Db.Execute(query); // הרצת השאילתה וקבלת התוצאה כטבלת DataTable
 
-            for(int i = 0; i < Dt.Rows.Count; i++)
-                        
+            Product tmp = new Product(); // יצירת אובייקט ריק מסוג Product שנחזיר בסוף
+
+            for (int i = 0; i < dt.Rows.Count; i++) // לולאה (למרות שתהיה רק שורה אחת אם ה-ID תקין)
             {
-                Product Tmp = new Product();//יצירת אובייקט מסוג מוצר
-
-                Tmp = new Product()//יצירת אובייקט מסוג מוצר ומילוי השדות שלו עם הערכים שנשלפו ממסד הנתונים
+                tmp = new Product() // מילוי האובייקט מהשורה שמוחזרת מה-DataTable
                 {
-                    Pid = (int)Dt.Rows[i]["Pid"],//השמת ערך בשדה
-                    Pname = (string)Dt.Rows[i]["Pname"],//השמת ערך בשדה
-                    Pdesc = (string)Dt.Rows[i]["Pdesc"],//השמת ערך בשדה
-                    Price = (float)Dt.Rows[i]["Price"],//השמת ערך בשדה
-                    Cid = (int)Dt.Rows[i]["Cid"]//השמת ערך בשדה
+                    Pid = (int)(dt.Rows[i]["Pid"]), // המרה ממחרוזת למספר של מזהה המוצר
+                    Pname = dt.Rows[i]["Pname"].ToString(),   // שם המוצר
+                    Pdesc = dt.Rows[i]["Pdesc"].ToString(),   // תיאור המוצר
+                    Price = (float)(dt.Rows[i]["Price"]), // המרת המחיר למספר מסוג float
+                    Picname = dt.Rows[i]["Picname"].ToString(), // שם קובץ התמונה
+                    Cid = Convert.ToInt32(dt.Rows[i]["Cid"])     // מזהה קטגוריה
                 };
-
-                lst.Add(Tmp);//הוספת המוצר לרשימה
             }
-            Db.Close();//סגירת החיבור לבסיס הנתונים
-            return lst;//מחזירה את כל רשימת כל המוצרים
+
+            Db.Close(); // סגירת החיבור למסד הנתונים
+            return tmp; // החזרת המוצר שמצאנו
         }
+
 
 
         public static int Save(Product Tmp)//שומר את המוצר
