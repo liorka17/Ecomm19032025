@@ -23,10 +23,10 @@ namespace DAL
             {
                 Product tmp = new Product() // יצירת אובייקט מוצר מהשורה
                 {
-                    Pid = (int)(dt.Rows[i]["Pid"]),
+                    Pid = Convert.ToInt32(dt.Rows[i]["Pid"]),
                     Pname = dt.Rows[i]["Pname"].ToString(),
                     Pdesc = dt.Rows[i]["Pdesc"].ToString(),
-                    Price = (float)(dt.Rows[i]["Price"]), // במקום ToSingle
+                    //Price = (float)(dt.Rows[i]["Price"]),
                     Picname = dt.Rows[i]["Picname"].ToString(),
                     Cid = Convert.ToInt32(dt.Rows[i]["Cid"]),
                 };
@@ -55,7 +55,7 @@ namespace DAL
                     Pid = (int)(dt.Rows[i]["Pid"]), // המרה ממחרוזת למספר של מזהה המוצר
                     Pname = dt.Rows[i]["Pname"].ToString(),   // שם המוצר
                     Pdesc = dt.Rows[i]["Pdesc"].ToString(),   // תיאור המוצר
-                    Price = (float)(dt.Rows[i]["Price"]), // המרת המחיר למספר מסוג float
+                    //Price = (float)(dt.Rows[i]["Price"]), // המרת המחיר למספר מסוג float
                     Picname = dt.Rows[i]["Picname"].ToString(), // שם קובץ התמונה
                     Cid = Convert.ToInt32(dt.Rows[i]["Cid"])     // מזהה קטגוריה
                 };
