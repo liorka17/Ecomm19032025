@@ -22,7 +22,7 @@ namespace BLL
 
         public static List<Category> GetAll()//מחזירה את כל הקטגוריות
         {
-            return new List<Category>();//מחזירה רשימה חדשה של קטגוריות
+            return  CategoryDAL.GetAll();//מחזירה רשימה חדשה של קטגוריות
         }
 
         public int Save()//שומר את הקטגוריה
