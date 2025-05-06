@@ -14,55 +14,51 @@ namespace DAL
 
         public static List<Product> GetAll()
         {
-            DbContext Db = new DbContext(); // חיבור למסד הנתונים
-            string query = "SELECT * FROM T_Product"; // שאילתה לשליפת כל המוצרים
-            DataTable dt = Db.Execute(query); // קבלת תוצאות כטבלה
-            List<Product> lst = new List<Product>(); // יצירת רשימה ריקה של מוצרים
-
-            for (int i = 0; i < dt.Rows.Count; i++) // מעבר על כל שורה בטבלה
+            DbContext Db = new DbContext();
+            string query = "SELECT * FROM T_Product";
+            DataTable dt = Db.Execute(query);
+            List<Product> lst = new List<Product>();
+            for (int i = 0; i < dt.Rows.Count; i++)
             {
-                Product tmp = new Product() // יצירת אובייקט מוצר מהשורה
+                Product tmp = new Product()
                 {
                     Pid = Convert.ToInt32(dt.Rows[i]["Pid"]),
                     Pname = dt.Rows[i]["Pname"].ToString(),
                     Pdesc = dt.Rows[i]["Pdesc"].ToString(),
-                    Price = (float)(dt.Rows[i]["Price"]),
+                    Price = Convert.ToSingle(dt.Rows[i]["Price"]),
                     Picname = dt.Rows[i]["Picname"].ToString(),
                     Cid = Convert.ToInt32(dt.Rows[i]["Cid"]),
                 };
-                lst.Add(tmp); // הוספה לרשימה
+                lst.Add(tmp);
             }
-
-            Db.Close(); // סגירת החיבור
-            return lst; // החזרת הרשימה
+            Db.Close();
+            return lst;
         }
 
 
 
-        public static Product GetById(int Pid) // פונקציה סטטית שמחזירה מוצר לפי מזהה
+        public static Product GetById(int Pid)
         {
-            DbContext Db = new DbContext(); // יצירת אובייקט של מחלקת DbContext כדי לעבוד מול בסיס הנתונים
+            DbContext Db = new DbContext();
+            string query = $"SELECT * FROM T_Product WHERE Pid = {Pid}";
+            DataTable dt = Db.Execute(query);
+            Product tmp = new Product();
 
-            string query = $"SELECT * FROM T_Product WHERE Pid = {Pid}"; // שאילתת SQL שמביאה מוצר לפי מזהה
-            DataTable dt = Db.Execute(query); // הרצת השאילתה וקבלת התוצאה כטבלת DataTable
-
-            Product tmp = new Product(); // יצירת אובייקט ריק מסוג Product שנחזיר בסוף
-
-            for (int i = 0; i < dt.Rows.Count; i++) // לולאה (למרות שתהיה רק שורה אחת אם ה-ID תקין)
+            for (int i = 0; i < dt.Rows.Count; i++)
             {
-                tmp = new Product() // מילוי האובייקט מהשורה שמוחזרת מה-DataTable
+                tmp = new Product()
                 {
-                    Pid = (int)(dt.Rows[i]["Pid"]), // המרה ממחרוזת למספר של מזהה המוצר
-                    Pname = dt.Rows[i]["Pname"].ToString(),   // שם המוצר
-                    Pdesc = dt.Rows[i]["Pdesc"].ToString(),   // תיאור המוצר
-                    Price = (float)(dt.Rows[i]["Price"]), // המרת המחיר למספר מסוג float
-                    Picname = dt.Rows[i]["Picname"].ToString(), // שם קובץ התמונה
-                    Cid = Convert.ToInt32(dt.Rows[i]["Cid"])     // מזהה קטגוריה
+                    Pid = Convert.ToInt32(dt.Rows[i]["Pid"]),
+                    Pname = dt.Rows[i]["Pname"].ToString(),
+                    Pdesc = dt.Rows[i]["Pdesc"].ToString(),
+                    Price = Convert.ToSingle(dt.Rows[i]["Price"]),
+                    Picname = dt.Rows[i]["Picname"].ToString(),
+                    Cid = Convert.ToInt32(dt.Rows[i]["Cid"]),
                 };
             }
 
-            Db.Close(); // סגירת החיבור למסד הנתונים
-            return tmp; // החזרת המוצר שמצאנו
+            Db.Close();
+            return tmp;
         }
 
         public static int Save(Product Tmp)//שומר את המוצר
